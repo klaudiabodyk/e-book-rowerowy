@@ -17,25 +17,6 @@ The main page of bike ebook with basic information and navigation to e-commerce 
 - **React Icons**: A library of popular icons.
 - **React Router**: A standard library for routing in React.
 
-## Getting Started
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-   git clone https://github.com/klaudiabodyk/portfolio-klaudia-bodyk-2024.git
-
-2. Navigate to the project directory:
-   cd my-portfolio
-
-3. Install the dependencies:
-   npm install
-
-4. Start the development server:
-   npm start
-
-
-The application will be available at `http://localhost:3000`.
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or have suggestions for improvements.
@@ -52,4 +33,3 @@ If you have any questions or feedback, please feel free to contact me:
 - Email: klaudia.bodyk@icloud.com
 - LinkedIn: Klaudia Bodyk(https://www.linkedin.com/in/klaudia-bodyk/)
 
-Thank you for visiting my portfolio!
