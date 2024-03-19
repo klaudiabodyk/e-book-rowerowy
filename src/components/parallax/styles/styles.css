@@ -4,12 +4,12 @@ body {
     height: 100vh;
     color: #ffffff;
     background: #000000;
-    font-family: Oswald, monospace !important;
+    font-family: 'DM Sans Regular', sans-serif !important;
 }
 
 h2 {
     font-size: 3.5vw;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
@@ -18,6 +18,76 @@ h2 {
     position: relative;
     z-index: 2;
     margin-top: 300px;
+}
+@font-face {
+    font-family: 'DM Sans Regular';
+    src: url('/src/components/parallax/assets/DMSans-Regular.ttf') format('truetype');
+}
+
+.description {
+    max-width: 1000px;
+    font-family: 'DM Sans Regular', sans-serif;
+    font-size: 1.5vw;
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 60px;
+    border-radius: 5px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 3.5);
+}
+
+.long-description {
+    max-width: 1400px;
+    font-family: 'DM Sans Regular', sans-serif;
+    font-size: 1.4vw;
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 60px;
+    border-radius: 5px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 3.5);
+}
+
+/* Media query for screens smaller than 1200px */
+@media (max-width: 1400px) {
+    .description {
+        max-width: 40%; /* Adjust max-width to 90% of the viewport width */
+        font-size: 2vw; /* Increase font size for better readability on smaller screens */
+    }
+
+    .long-description {
+        max-width: 40%; /* Adjust max-width to 90% of the viewport width */
+        font-size: 1.8vw; /* Increase font size for better readability on smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 992px */
+@media (max-width: 992px) {
+    .description, .long-description {
+        max-width: 40%; /* Adjust max-width to 90% of the viewport width */
+        font-size: 2.5vw; /* Increase font size for better readability on smaller screens */
+    }
+}
+
+.button-buy {
+    height: 200px;
+    width: 500px;
+    background-color: #ff0000; /* Red background */
+    color: #ffffff; /* White font */
+    font-size: 1.6em; /* Adjust font size as needed */
+    letter-spacing: 4px;
+    padding: 15px 30px; /* Padding for size */
+    border-radius: 25px; /* Large rounded corners */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none !important;
+}
+
+.button-buy:hover {
+    background-color: #cc0000; /* Darker red on hover */
 }
 
 section {
