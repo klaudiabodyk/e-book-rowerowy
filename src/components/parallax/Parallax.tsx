@@ -1,17 +1,15 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import gsap from "gsap";
-import { Observer } from "gsap/all";
+import {Observer} from "gsap/all";
 import "./styles/styles.css";
-import rv from "./assets/background/12.jpg";
-import mountains from "./assets/background/IMG_4671.jpeg";
-import bg1 from "./assets/gradient/9.png";
-import bg2 from "./assets/gradient/8.png";
-import me from "./assets/hi-its-me.png"
+import photo1 from "./assets/background/1.jpg";
+import photo3 from "./assets/background/3.jpg";
+import photo4 from "./assets/background/4.jpg";
+import photo5 from "./assets/background/5.jpg";
+import photo6 from "./assets/background/6.jpg";
+
 import Menu from "../menu/Menu";
-import { FaReact } from "react-icons/fa";
-import {BiLogoTypescript} from "react-icons/bi";
-import {SiNestjs, SiRedux} from "react-icons/si";
-import {DiNodejs} from "react-icons/di";
+import {Link} from "react-router-dom";
 
 type Section = {
     title: string;
@@ -20,12 +18,15 @@ type Section = {
 };
 
 const sections: Section[] = [
-    { title: "Hello, I'm Klaudia", image: mountains },
-    { title: "Software developer with over 3 years of experience", image: bg2, additional: <img src={me}  alt={'me'} className="me-img"/> },
-    { title: "It's nice to meet you", image: bg1 },
-    { title: "My tech stack", image: bg2, additional:<div className="icons-space"> <FaReact /><BiLogoTypescript /> <SiRedux /></div>  },
-    { title: "In progress", image: bg1, additional:<div className="icons-space"> <DiNodejs /> <SiNestjs /></div>  },
-    { title: "My hobby", image: rv },
+    { title: "Postaw na bezpieczeństwo", image: photo1, additional: <div className={'description'}>Dowiedz się jak zadbać o bezpieczeństwo na rowerze. Zostań bardziej świadomym rowerzystą, ale także kierowcą i pieszym. Poznasz aktualne przepisy, obowiązki, dobre nawyki bezpiecznego poruszania się rowerem, ale także zagrożenia czyhające na rowerzystów. Poruszam także wiele innych ciekawych tematów, które z pewnością Cię zainteresują! </div> },
+    { title: "Zdobądź użyteczną wiedzę", image: photo6, additional: <div className={'description'}>Omawiam zakup roweru. Nowy czy używany? Na co zwrócić uwagę? Sklep stacjonarny czy internet — plusy i minusy. Dowiesz się również jak zabezpieczyć rower przed kradzieżą i zgłębimy temat ubezpieczeń. Powiemy też sobie o aspektach technicznych, jak zadbać o swoje dwa kółka i czy warto korzystać z serwisów rowerowych.  </div>  },
+    { title: "Kim jestem?", image: photo4, additional: <div className={'description'}>Witaj w moim rowerowym świecie! Nazywam się Marcin Rybczyński. Z branżą rowerową jestem związany od blisko 20. lat. Głównie jako mechanik, ale też sprzedawca i szkoleniowiec z zakresu mechaniki rowerowej. Doświadczenie zdobywałem na rynku polskim, ale również niemieckim, gdzie ogromny nacisk kładzie się na bezpieczeństwo rowerzystów. Przez blisko dwie dekady poznałem mnóstwo problemów klientów, często błahych, gdzie rozwiązanie jest bardzo proste. W 2021 roku narodził się pomysł stworzenia e-booka, przy pomocy którego pragnę poszerzać świadomość użytkowników dwóch kółek.
+        </div>  },
+    { title: "Dla kogo ten e-book?", image: photo5, additional: <div className={'description'}>Dla każdego! Główną grupą docelową są oczywiście rowerzyści, osoby dojeżdżające rowerem do pracy czy szkoły jak oraz jeżdżący turystycznie. Jednak zmotoryzowani i piesi również mogą skorzystać, do czego gorąco zachęcam. Po pierwsze dlatego, że rowerzystą może stać się każdy, w każdym wieku. Drugą istotną kwestią jest znajomość praw innych uczestników ruchu, którzy też są pełnoprawnymi użytkownikami dróg. Treść e-booka opracowywałem z myślą, aby były one zrozumiałe dla wszystkich, a zwłaszcza dla tych, którzy traktują rower jako środek transportu i chcą czuć się bezpieczniej, a także zgłębić inne ciekawe rowerowe tematy.
+        </div>   },
+    { title: "Dlaczego warto?", image: photo3, additional: <div className={'long-description'}>Posiadanie wiedzy, która bezpośrednio przekłada się na bezpieczniejsze poruszanie się po drogach, chodnikach, ścieżkach rowerowych jest nieocenione. Z roku na rok przybywa użytkowników dróg. Zarówno rowerzystów, kierowców, użytkowników hulajnóg, jak i pieszych. Infrastruktura nie zawsze za tym nadąża. Wpływa to znacząco na natężenie ruchu, co z kolei ma ogromny wpływ na bezpieczeństwo. Świadomość zagrożeń, swoich praw i obowiązków względem pieszych i zmotoryzowanych sprawi, że poruszanie się naszym rowerem będzie dla nas i naszych bliskich znacznie bezpieczniejsze.
+            Wskazówki jak zminimalizować ryzyko kradzieży roweru sprawią, że Twój rower będzie długo Twój. Podstawowa wiedza techniczna sprawia, że jazda rowerem staje się bezpieczniejsza, komfortowa, a także pozwala zaoszczędzić sporo pieniędzy, ponieważ bardziej świadomie użytkujemy swój rower. </div>  },
+    { title: "Sklep internetowy", image: photo4, additional: <Link className={'button-buy'} to={'http://ebook-rowerowy.pl/shop-2/'}>KUP E-BOOK</Link>}
 ];
 
 const Parallax = () => {

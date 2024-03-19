@@ -1,15 +1,15 @@
 import {Link} from "react-router-dom";
-import {FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa6";
+import { FaInstagram} from "react-icons/fa6";
 import {MdOutlineMail} from "react-icons/md";
+import {FaShoppingCart} from "react-icons/fa";
 
 export const navs = [
     <div>
-        <h2>Contact</h2>
+        <h2>Kontakt</h2>
     <nav>
-    <Link style={{ animationDelay: "0.7s" }} to={'https://github.com/klaudiabodyk'}>GitHub <FaGithub /></Link>
-    <Link style={{ animationDelay: "0.8s" }} to={'mailto:klaudia.bodyk@icloud.com'}>Email <MdOutlineMail /></Link>
-    <Link style={{ animationDelay: "0.9s" }} to={'https://www.instagram.com/kidianna/'}>Instagram <FaInstagram /></Link>
-    <Link style={{ animationDelay: "1s" }} to={'https://www.linkedin.com/in/klaudia-bodyk/'}>LinkedIn <FaLinkedin /></Link>
+    <Link style={{ animationDelay: "0.7s" }} to={'https://ebook-rowerowy.pl'}>Kup e-book <FaShoppingCart /></Link>
+    <Link style={{ animationDelay: "0.8s" }} to={'mailto:kontakt@ebook-rowerowy.pl'}>Email <MdOutlineMail /></Link>
+    <Link style={{ animationDelay: "0.9s" }} to={'https://www.instagram.com/'}>Instagram <FaInstagram /></Link>
     </nav>
     </div>,
 ];
