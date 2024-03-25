@@ -1,23 +1,19 @@
 import React, {useEffect} from "react";
+import Menu from "../menu/Menu";
+import {Link} from "react-router-dom";
+import i18n from "../../i18n";
 import gsap from "gsap";
 import {Observer} from "gsap/all";
 import "./styles/styles.css";
 import photo1 from "./assets/background/1.jpg";
+import photo2 from "./assets/background/2.jpg";
 import photo3 from "./assets/background/3.jpg";
 import photo4 from "./assets/background/4.jpg";
 import photo5 from "./assets/background/5.jpg";
 import photo6 from "./assets/background/6.jpg";
 import photo7 from "./assets/background/7.jpg";
 import photo8 from "./assets/background/8.jpg";
-import photo2 from "./assets/background/2.jpg";
-import photo10 from "./assets/background/10.jpg";
 import photo9 from "./assets/background/9.jpg";
-
-
-
-import Menu from "../menu/Menu";
-import {Link} from "react-router-dom";
-import i18n from "../../i18n";
 
 type Section = {
     title: string;
