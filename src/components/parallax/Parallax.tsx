@@ -7,9 +7,13 @@ import photo3 from "./assets/background/3.jpg";
 import photo4 from "./assets/background/4.jpg";
 import photo5 from "./assets/background/5.jpg";
 import photo6 from "./assets/background/6.jpg";
+import photo7 from "./assets/background/7.jpg";
 import photo8 from "./assets/background/8.jpg";
-import photo9 from "./assets/background/9.jpg";
+import photo2 from "./assets/background/2.jpg";
 import photo10 from "./assets/background/10.jpg";
+import photo9 from "./assets/background/9.jpg";
+
+
 
 import Menu from "../menu/Menu";
 import {Link} from "react-router-dom";
@@ -22,15 +26,16 @@ type Section = {
 };
 
 const sections: Section[] = [
-    { title: i18n.t("sekcja1"), image: photo1, additional: <div className={'description'}>{i18n.t("subHeader.sekcja1")}</div>},
-    { title: i18n.t("sekcja2"), image: photo6, additional: <div className={'description'}>{i18n.t("subHeader.sekcja2")}</div>},
-    { title: i18n.t("sekcja3"), image: photo8, additional: <div className={'long-description'}>Lorum ipsum </div>},
-    { title: i18n.t("sekcja4"), image: photo9, additional: <div className={'long-description'}>Lorum ipsum </div>},
-    { title: i18n.t("sekcja5"), image: photo10, additional: <div className={'long-description'}>Lorum ipsum </div>},
-    { title: i18n.t("sekcja6"), image: photo4, additional: <div className={'description'}>{i18n.t("subHeader.sekcja6")}</div>},
-    { title: i18n.t("sekcja7"), image: photo5, additional: <div className={'description'}>{i18n.t("subHeader.sekcja7")}</div>},
-    { title: i18n.t("sekcja8"), image: photo3, additional: <div className={'long-description'}>{i18n.t("subHeader.sekcja8")}</div>},
-     { title: i18n.t("sekcja9"), image: photo4, additional: <Link className={'button-buy'} to={'http://ebook-rowerowy.pl/shop-2/'}>{i18n.t("subHeader.sekcja9")}</Link>}
+    { title: i18n.t("header.section1"), image: photo1, additional: <div className={'description'}>{i18n.t("description.section1")}</div>},
+    { title: i18n.t("header.section2"), image: photo6, additional: <div className={'description'}>{i18n.t("description.section2")}</div>},
+    { title: i18n.t("header.section3"), image: photo8, additional: <div className={'description'}>{i18n.t("description.section3")}</div>},
+    { title: i18n.t("header.section4"), image: photo2, additional: <div className={'description'}>{i18n.t("description.section4")}</div>},
+    { title: i18n.t("header.section5"), image: photo9, additional: <div className={'description'}>{i18n.t("description.section5")}</div>},
+    { title: i18n.t("header.section6"), image: photo7, additional: <div className={'description'}>{i18n.t("description.section6")}</div>},
+    { title: i18n.t("header.section7"), image: photo5, additional: <div className={'description'}>{i18n.t("description.section7")}</div>},
+    { title: i18n.t("header.section8"), image: photo3, additional: <div className={'description'}>{i18n.t("description.section8")}</div>},
+    { title: i18n.t("header.section9"), image: photo5, additional: <div className={'description'}>{i18n.t("description.section9")}</div>},
+    { title: i18n.t("header.section10"), image: photo4, additional: <Link className={'button-buy'} to={'http://ebook-rowerowy.pl/shop-2/'}>{i18n.t("description.section10")}</Link>}
 ];
 
 const Parallax = () => {
