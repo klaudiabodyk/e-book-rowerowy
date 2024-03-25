@@ -1,3 +1,7 @@
+still in progress... :-) 
+
+https://ebook-rowerowy.netlify.app/
+
 ## E-book webpage
 The main page of bike ebook with basic information and navigation to e-commerce part
 
