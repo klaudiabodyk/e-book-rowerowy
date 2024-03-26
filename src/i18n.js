@@ -28,8 +28,7 @@ i18n
                         "section6" : "Prostym językiem opisuje czynności, które może wykonać każdy przy swoim rowerze. Są to  porady, które nierzadko pozwolą zaoszczędzić całkiem sporą kwotę. Odpowiem na pytanie czy warto korzystać z serwisów rowerowych.",
                         "section7" : "Witaj w moim rowerowym świecie! Nazywam się Marcin Rybczyński. Z branżą rowerową jestem związany od blisko 20. lat. Głównie jako mechanik, ale też sprzedawca i szkoleniowiec. Doświadczenie zdobywałem na rynku polskim i niemieckim, gdzie ogromny nacisk kładzie się na bezpieczeństwo rowerzystów. W 2022 roku narodził się pomysł stworzenia e-booka dla cyklistów.",
                         "section8" : "Dla każdego! Główną grupą docelową są oczywiście rowerzyści, osoby dojeżdżające rowerem do pracy, szkoły oraz jeżdżące rowerem turystycznie. Treść e-booka opracowywałem z myślą, aby były one zrozumiałe dla wszystkich. E-book pełni funkcję kompletnego poradnika dla każdego rowerzysty!",
-                        "section9" : "Posiadanie wiedzy, która bezpośrednio przekłada się na bezpieczniejsze poruszanie się rowerem jest nieocenione." +
-                            "W e-booku poruszam kilkanaście ciekawych tematów. Treść, którą przekazuje jest bardzo praktyczna. Z pewnością znajdziesz w nim istotne dla siebie informację. Będziesz bardziej świadomie użytkował swój rower. Jeśli jesteś cyklistą, musisz go mieć!",
+                        "section9" : "Posiadanie wiedzy, która bezpośrednio przekłada się na bezpieczniejsze poruszanie się rowerem jest nieocenione. W e-booku poruszam kilkanaście ciekawych tematów. Treść, którą przekazuje jest bardzo praktyczna. Z pewnością znajdziesz w nim istotne dla siebie informację. Będziesz bardziej świadomie użytkował swój rower. Jeśli jesteś cyklistą, musisz go mieć!",
                         "section10" : "KUP E-BOOK"
                     }
                 }

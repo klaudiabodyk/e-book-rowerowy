@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'DM Sans Regular';
+    src: url('/src/components/parallax/assets/DMSans-Regular.ttf') format('truetype');
+}
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +10,6 @@ body {
     background: #000000;
     font-family: 'DM Sans Regular', sans-serif !important;
 }
-
 h2 {
     font-size: 3.5vw;
     font-weight: 500;
@@ -19,12 +22,7 @@ h2 {
     z-index: 2;
     margin-top: 300px;
 }
-@font-face {
-    font-family: 'DM Sans Regular';
-    src: url('/src/components/parallax/assets/DMSans-Regular.ttf') format('truetype');
-}
-
-.description {
+.description, .long-description {
     max-width: 1000px;
     font-family: 'DM Sans Regular', sans-serif;
     font-size: 1.5vw;
@@ -37,36 +35,65 @@ h2 {
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 3.5);
 }
 
-.long-description {
-    max-width: 1400px;
-    font-family: 'DM Sans Regular', sans-serif;
-    font-size: 1.4vw;
-    color: #ffffff;
-    line-height: 1.6;
-    text-align: justify;
-    margin: 0 auto;
-    padding: 60px;
-    border-radius: 5px;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 3.5);
-}
-
 @media (max-width: 1400px) {
-    .description {
-        max-width: 40%;
-        font-size: 2vw;
+    h2 {
+        font-size: 4vw;
+        margin-top: 10%;
     }
-
-    .long-description {
-        max-width: 40%;
-        font-size: 1.8vw;
+    .description {
+        max-width: 70%;
+        font-size: 1.5vw;
     }
 }
-
-
-@media (max-width: 992px) {
-    .description, .long-description {
-        max-width: 40%;
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 4vw;
+        margin-top: 20%;
+    }
+    .description {
+        max-width: 80%;
         font-size: 2.5vw;
+    }
+}
+@media (max-width: 992px) {
+    h2 {
+        font-size: 6vw;
+        margin-top: 30%;
+        letter-spacing: 11px;
+    }
+    .description {
+        max-width: 95%;
+        font-size: 2.9vw;
+    }
+}
+@media (max-width: 768px) {
+    h2 {
+        font-size: 7vw;
+        margin-top: 30%;
+        letter-spacing: 11px;
+    }
+    .description {
+        max-width: 95%;
+        font-size: 4.5vw;
+        padding: 10%;
+    }
+
+}
+@media (max-width: 550px) {
+    h2 {
+        padding-left: 2%;
+        font-size: 7vw;
+        margin-top: 40%;
+        letter-spacing: 11px;
+    }
+    .description {
+        font-size: 4.8vw;
+        padding: 0;
+        margin: 5%;
+    }
+    .long-description {
+        font-size: 4.8vw;
+        padding: 5%;
     }
 }
 
@@ -87,6 +114,11 @@ h2 {
 
 .button-buy:hover {
     background-color: #cc0000;
+}
+
+.additional-section {
+    z-index: 2;
+    margin-bottom: 200px;
 }
 
 section {
@@ -126,58 +158,6 @@ section .bg::before {
     z-index: 1;
 }
 
-.icons {
-    z-index: 2;
-    margin-bottom: 200px;
-    & svg {
-        height: 100px;
-        width: 100px;
-        margin-right: 50px;
-    }
-}
-.me-img {
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-}
-
-@media (max-width: 1024px) {
-    h2 {
-        font-size: 5vw;
-        margin-top: 200px;
-    }
-
-    .icons svg {
-        height: 80px;
-        width: 80px;
-        margin-right: 25px;
-    }
-
-    .me-img {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media (max-width: 768px) {
-    h2 {
-        font-size: 9vw;
-        margin-top: 150px;
-        letter-spacing: 13px;
-    }
-
-    .icons svg {
-        height: 80px;
-        width: 80px;
-        margin-right: 20px;
-        margin-bottom: 100px;
-    }
-
-    .me-img {
-        width: 200px;
-        height: 200px;
-    }
-}
 
 
 
