@@ -14,6 +14,7 @@ import photo6 from "./assets/background/6.jpg";
 import photo7 from "./assets/background/7.jpg";
 import photo8 from "./assets/background/8.jpg";
 import photo9 from "./assets/background/9.jpg";
+import me from "./assets/itsme.jpg";
 
 type Section = {
     title: string;
@@ -28,10 +29,10 @@ const sections: Section[] = [
     { title: i18n.t("header.section4"), image: photo2, additional: <div className={'description'}>{i18n.t("description.section4")}</div>},
     { title: i18n.t("header.section5"), image: photo9, additional: <div className={'description'}>{i18n.t("description.section5")}</div>},
     { title: i18n.t("header.section6"), image: photo7, additional: <div className={'description'}>{i18n.t("description.section6")}</div>},
-    { title: i18n.t("header.section7"), image: photo5, additional: <div className={'description'}>{i18n.t("description.section7")}</div>},
+    { title: i18n.t("header.section7"), image: me, additional: <div className={'description'}>{i18n.t("description.section7")}</div>},
     { title: i18n.t("header.section8"), image: photo3, additional: <div className={'long-description'}>{i18n.t("description.section8")}</div>},
     { title: i18n.t("header.section9"), image: photo5, additional: <div className={'long-description'}>{i18n.t("description.section9")}</div>},
-    { title: i18n.t("header.section10"), image: photo4, additional: <Link className={'button-buy'} to={'http://ebook-rowerowy.pl/shop-2/'}>{i18n.t("description.section10")}</Link>}
+    { title: i18n.t("header.section10"), image: photo4, additional: <Link className={'button-buy'} to={'http://sklep.ebook-rowerowy.pl/shop-2/'}>{i18n.t("description.section10")}</Link>}
 ];
 
 const Parallax = () => {
