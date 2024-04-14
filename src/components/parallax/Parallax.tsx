@@ -32,7 +32,7 @@ const sections: Section[] = [
     { title: i18n.t("header.section7"), image: me, additional: <div className={'description'}>{i18n.t("description.section7")}</div>},
     { title: i18n.t("header.section8"), image: photo3, additional: <div className={'long-description'}>{i18n.t("description.section8")}</div>},
     { title: i18n.t("header.section9"), image: photo5, additional: <div className={'long-description'}>{i18n.t("description.section9")}</div>},
-    { title: i18n.t("header.section10"), image: photo4, additional: <Link className={'button-buy'} to={'http://sklep.ebook-rowerowy.pl/shop-2/'}>{i18n.t("description.section10")}</Link>}
+    { title: i18n.t("header.section10"), image: photo4, additional: <Link className={'button-buy'} to={'http://sklep.ebook-rowerowy.pl/'}>{i18n.t("description.section10")}</Link>}
 ];
 
 const Parallax = () => {

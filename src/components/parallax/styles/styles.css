@@ -23,78 +23,64 @@ h2 {
     margin-top: 300px;
 }
 .description, .long-description {
-    max-width: 1000px;
+    display: flex;
+    justify-content: center;
     font-family: 'DM Sans Regular', sans-serif;
     font-size: 1.5vw;
     color: #ffffff;
     line-height: 1.6;
     text-align: justify;
     margin: 0 auto;
-    padding: 60px;
+    padding-left: 20%;
+    padding-right: 20%;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.3);
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 3.5);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 6.6);
 }
 
 @media (max-width: 1400px) {
     h2 {
-        font-size: 4vw;
-        margin-top: 10%;
+        font-size: 5vw;
     }
-    .description {
-        max-width: 70%;
-        font-size: 1.5vw;
+    .description, .long-description {
+        font-size: 2.3vw;
     }
 }
 @media (max-width: 1024px) {
     h2 {
-        font-size: 4vw;
-        margin-top: 20%;
+        font-size: 6vw;
     }
-    .description {
-        max-width: 80%;
+    .description, .long-description {
         font-size: 2.5vw;
     }
 }
 @media (max-width: 992px) {
     h2 {
         font-size: 6vw;
-        margin-top: 30%;
-        letter-spacing: 11px;
+        letter-spacing: 8px;
     }
-    .description {
-        max-width: 95%;
-        font-size: 2.9vw;
+    .description, .long-description {
+        font-size: 2.5vw;
     }
 }
 @media (max-width: 768px) {
     h2 {
         font-size: 7vw;
-        margin-top: 30%;
-        letter-spacing: 11px;
+        letter-spacing: initial !important;
     }
-    .description {
-        max-width: 95%;
-        font-size: 4.5vw;
+    .description, .long-description {
+        font-size: 3.5vw;
         padding: 10%;
     }
 
 }
 @media (max-width: 550px) {
     h2 {
-        padding-left: 2%;
-        font-size: 7vw;
-        margin-top: 40%;
-        letter-spacing: 11px;
+        letter-spacing: initial !important;
     }
-    .description {
-        font-size: 4.8vw;
-        padding: 0;
+    .description, .long-description {
+        font-size: 3.5vw;
         margin: 5%;
-    }
-    .long-description {
-        font-size: 4.8vw;
-        padding: 5%;
+        text-align: justify;
     }
 }
 
@@ -119,7 +105,7 @@ h2 {
 
 .additional-section {
     z-index: 2;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
 }
 
 section {
