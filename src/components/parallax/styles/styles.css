@@ -66,6 +66,7 @@ h2 {
     h2 {
         font-size: 7vw;
         letter-spacing: initial !important;
+        margin-top: 50%;
     }
     .description, .long-description {
         font-size: 3.5vw;
@@ -76,10 +77,10 @@ h2 {
 @media (max-width: 550px) {
     h2 {
         letter-spacing: initial !important;
+        margin-top: 40%;
     }
     .description, .long-description {
-        font-size: 3.5vw;
-        margin: 5%;
+        font-size: 4.7vw;
         text-align: justify;
     }
 }
