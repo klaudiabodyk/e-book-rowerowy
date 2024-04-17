@@ -17,10 +17,10 @@ h2 {
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: 10px;
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
     position: relative;
     z-index: 2;
     margin-top: 300px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 6.6);
 }
 .description, .long-description {
     display: flex;
@@ -77,11 +77,17 @@ h2 {
 @media (max-width: 550px) {
     h2 {
         letter-spacing: initial !important;
-        margin-top: 40%;
+        margin-top: 80%;
     }
-    .description, .long-description {
+    .description {
         font-size: 4.7vw;
         text-align: justify;
+        padding: 4%;
+    }
+    .long-description {
+        font-size: 4.7vw;
+        text-align: justify;
+        padding: 3%;
     }
 }
 
