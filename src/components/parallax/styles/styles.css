@@ -20,7 +20,7 @@ h2 {
     position: relative;
     z-index: 2;
     margin-top: 300px;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 6.6);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .description, .long-description {
     display: flex;
@@ -76,8 +76,10 @@ h2 {
 }
 @media (max-width: 550px) {
     h2 {
+        font-size: 8.5vw;
         letter-spacing: initial !important;
-        margin-top: 80%;
+        padding-top: 40%;
+        margin-top: 40%;
     }
     .description {
         font-size: 4.7vw;
