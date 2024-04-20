@@ -114,9 +114,10 @@ const Parallax = () => {
                             <div
                                 className="bg one"
                                 style={{ backgroundImage: `url(${section.image})` }}
-                            />
+                            >
                                 <h2>{section.title}</h2>
                                 <div className={"additional-section"}>{section.additional}</div>
+                            </div>
                         </div>
                     </div>
                 </section>

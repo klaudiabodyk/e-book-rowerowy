@@ -18,7 +18,7 @@ const Menu = () => {
             <div className={`menu ${openClass}`}>
                 <Swiper speed={750} modules={[Navigation]} navigation>
                     {navs.map((nav) => (
-                        <SwiperSlide>{nav}</SwiperSlide>
+                        <SwiperSlide key={nav.key}>{nav}</SwiperSlide>
                     ))}
                 </Swiper>
             </div>
