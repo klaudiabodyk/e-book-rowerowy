@@ -15,7 +15,6 @@ import photo7 from "./assets/background/7.jpg";
 import photo8 from "./assets/background/8.jpg";
 import photo9 from "./assets/background/9.jpg";
 import me2 from "./assets/2.svg";
-import LazyImage from "./LazyImage";
 
 type Section = {
     title: string;
@@ -112,9 +111,7 @@ const Parallax = () => {
                 <section key={section.title}>
                     <div className="outer">
                         <div className="inner">
-                            <LazyImage
-                                src={section.image}
-                                alt={section.title}
+                            <div
                                 className="bg one"
                                 style={{ backgroundImage: `url(${section.image})` }}
                             />
