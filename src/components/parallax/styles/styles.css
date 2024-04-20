@@ -76,18 +76,15 @@ h2 {
 }
 @media (max-width: 550px) {
     h2 {
-        font-size: 8.5vw;
         letter-spacing: initial !important;
         padding-top: 30%;
         margin-top: 30%;
     }
     .description {
-        font-size: 4.7vw;
         text-align: justify;
         padding: 4%;
     }
     .long-description {
-        font-size: 4.7vw;
         text-align: justify;
         padding: 3%;
     }
@@ -153,6 +150,35 @@ section .bg::before {
     background: rgba(82, 82, 82, 0.6);
     z-index: 1;
 }
+@media (max-width: 500px) {
+    section .bg {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-size: cover;
+        background-position: right;
+    }
+
+    section .bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(82, 82, 82, 0.6);
+        z-index: 1;
+    }
+}
+@media (max-width: 380px) {
+    section .bg {
+        background-position: 95% 50%; right: 0;
+    }
+}
+
 
 
 
