@@ -68,10 +68,6 @@ h2 {
         letter-spacing: initial !important;
         margin-top: 50%;
     }
-    .description, .long-description {
-        font-size: 3.5vw;
-        padding: 10%;
-    }
 
 }
 @media (max-width: 550px) {
@@ -81,10 +77,12 @@ h2 {
         margin-top: 30%;
     }
     .description {
+        font-size: 4vw;
         text-align: justify;
         padding: 4%;
     }
     .long-description {
+        font-size: 4vw;
         text-align: justify;
         padding: 3%;
     }
@@ -110,6 +108,7 @@ h2 {
 }
 
 .additional-section {
+    position: relative;
     z-index: 2;
     margin-bottom: 300px;
 }
