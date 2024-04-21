@@ -20,19 +20,20 @@ type Section = {
     title: string;
     image: string;
     additional? : any;
+    styling?: string;
 };
 
 const sections: Section[] = [
-    { title: i18n.t("header.section1"), image: photo1, additional: <div className={'long-description'}>{i18n.t("description.section1")}</div>},
-    { title: i18n.t("header.section2"), image: photo6, additional: <div className={'description'}>{i18n.t("description.section2")}</div>},
-    { title: i18n.t("header.section3"), image: photo8, additional: <div className={'description'}>{i18n.t("description.section3")}</div>},
-    { title: i18n.t("header.section4"), image: photo2, additional: <div className={'description'}>{i18n.t("description.section4")}</div>},
-    { title: i18n.t("header.section5"), image: photo9, additional: <div className={'description'}>{i18n.t("description.section5")}</div>},
-    { title: i18n.t("header.section6"), image: photo7, additional: <div className={'description'}>{i18n.t("description.section6")}</div>},
-    { title: i18n.t("header.section7"), image: me2, additional: <div className={'description'}>{i18n.t("description.section7")}</div>},
-    { title: i18n.t("header.section8"), image: photo3, additional: <div className={'long-description'}>{i18n.t("description.section8")}</div>},
-    { title: i18n.t("header.section9"), image: photo5, additional: <div className={'long-description'}>{i18n.t("description.section9")}</div>},
-    { title: i18n.t("header.section10"), image: photo4, additional: <Link className={'button-buy'} to={'http://sklep.ebook-rowerowy.pl/'}>{i18n.t("description.section10")}</Link>}
+    { title: i18n.t("header.section1"), image: photo1, additional: <div className={'long-description'}>{i18n.t("description.section1")}</div>, styling: 'bg one'},
+    { title: i18n.t("header.section2"), image: photo6, additional: <div className={'description'}>{i18n.t("description.section2")}</div>, styling: 'bg one'},
+    { title: i18n.t("header.section3"), image: photo8, additional: <div className={'description'}>{i18n.t("description.section3")}</div>, styling: 'bg one'},
+    { title: i18n.t("header.section4"), image: photo2, additional: <div className={'description'}>{i18n.t("description.section4")}</div>, styling: 'bg one'},
+    { title: i18n.t("header.section5"), image: photo9, additional: <div className={'description'}>{i18n.t("description.section5")}</div>, styling: 'bg one'},
+    { title: i18n.t("header.section6"), image: photo7, additional: <div className={'description'}>{i18n.t("description.section6")}</div>, styling: 'custom-service'},
+    { title: i18n.t("header.section7"), image: me2, additional: <div className={'description'}>{i18n.t("description.section7")}</div>, styling: 'custom-who'},
+    { title: i18n.t("header.section8"), image: photo3, additional: <div className={'long-description'}>{i18n.t("description.section8")}</div>, styling: 'bg one'},
+    { title: i18n.t("header.section9"), image: photo5, additional: <div className={'long-description'}>{i18n.t("description.section9")}</div>, styling: 'bg one'},
+    { title: i18n.t("header.section10"), image: photo4, additional: <Link className={'button-buy'} to={'http://sklep.ebook-rowerowy.pl/'}>{i18n.t("description.section10")}</Link>, styling: 'bg one'},
 ];
 
 const Parallax = () => {
@@ -112,7 +113,7 @@ const Parallax = () => {
                     <div className="outer">
                         <div className="inner">
                             <div
-                                className="bg one"
+                                className={`${section.styling}`}
                                 style={{ backgroundImage: `url(${section.image})` }}
                             >
                                 <h2>{section.title}</h2>

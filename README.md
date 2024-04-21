@@ -1,6 +1,4 @@
-still in progress... :-) 
-
-https://ebook-rowerowy.netlify.app/
+https://ebook-rowerowy.pl
 
 ## E-book webpage
 The main page of bike ebook with basic information and navigation to e-commerce part
@@ -9,8 +7,6 @@ The main page of bike ebook with basic information and navigation to e-commerce 
 
 - **Parallax Effect**: The portfolio uses GSAP for a smooth parallax effect on the background images, creating an engaging user experience.
 - **Responsive Menu**: A responsive menu is implemented using Swiper, allowing users to navigate through different sections of the portfolio easily.
-- **Tech Stack**: Showcases my proficiency in various technologies including React, TypeScript, Redux, and more.
-- **Contact Information**: Provides links to my GitHub, Email, Instagram, and LinkedIn profiles.
 
 ## Technologies Used
 
@@ -21,9 +17,6 @@ The main page of bike ebook with basic information and navigation to e-commerce 
 - **React Icons**: A library of popular icons.
 - **React Router**: A standard library for routing in React.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or have suggestions for improvements.
 
 ## License
 
@@ -33,7 +26,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 If you have any questions or feedback, please feel free to contact me:
 
-- GitHub: [@klaudiabodyk](https://github.com/klaudiabodyk)
 - Email: klaudia.bodyk@icloud.com
 - LinkedIn: Klaudia Bodyk(https://www.linkedin.com/in/klaudia-bodyk/)
 
