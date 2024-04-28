@@ -8,8 +8,8 @@ export const navs = [
     <div>
         <div className={'header-contact'}>Kontakt</div>
     <nav>
-        <Link style={{ animationDelay: "0.7s" }} to={'http://sklep.ebook-rowerowy.pl/'}><div className={'menu-row'}>Kup e-book <FaShoppingCart /></div></Link>
-        <Link style={{ animationDelay: "0.8s" }} to={'mailto:kontakt@ebook-rowerowy.pl'}><div className={'menu-row'}>Email <MdOutlineMail /></div></Link>
+        <Link style={{ animationDelay: "0.7s" }} to={'https://sklep.ebook-rowerowy.pl/product/e-book-rowerowy/'}><div className={'menu-row'}>Kup e-book <FaShoppingCart /></div></Link>
+        <Link style={{ animationDelay: "0.8s" }} to={'mailto:kontakt@sklep.ebook-rowerowy.pl'}><div className={'menu-row'}>Email <MdOutlineMail /></div></Link>
         <Link style={{ animationDelay: "0.9s" }} to={'https://www.instagram.com/'}><div className={'menu-row'}>Instagram <FaInstagram /></div></Link>
     </nav>
     </div>,
