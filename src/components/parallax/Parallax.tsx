@@ -33,7 +33,7 @@ const sections: Section[] = [
     { title: i18n.t("header.section7"), image: me2, additional: <div className={'description'}>{i18n.t("description.section7")}</div>, styling: 'custom-who bg one'},
     { title: i18n.t("header.section8"), image: photo3, additional: <div className={'long-description'}>{i18n.t("description.section8")}</div>, styling: 'bg one'},
     { title: i18n.t("header.section9"), image: photo5, additional: <div className={'long-description'}>{i18n.t("description.section9")}</div>, styling: 'bg one'},
-    { title: i18n.t("header.section10"), image: photo4, additional: <Link className={'button-buy'} to={'http://sklep.ebook-rowerowy.pl/'}>{i18n.t("description.section10")}</Link>, styling: 'custom-service bg one'},
+    { title: i18n.t("header.section10"), image: photo4, additional: <Link className={'button-buy'} to={'https://sklep.ebook-rowerowy.pl/product/e-book-rowerowy/'}>{i18n.t("description.section10")}</Link>, styling: 'custom-service bg one'},
 ];
 
 const Parallax = () => {
